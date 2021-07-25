@@ -1,44 +1,53 @@
-.wrapper{
+.wrapper {
     text-align: center;
-    background-color: rgba(64,64,64,0.15);
-    /*margin: 3em;*/
+    background-color: rgba(64, 64, 64, 0.15);
     padding: 3em;
     width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
-.container{
+
+.container {
     display: flex;
 }
-.photo{
+
+.photo {
     margin-left: auto;
 }
-.inform{
+
+.inform {
     margin-right: auto;
 }
-.about, .education, .skills, .languages, .exemple{
+
+.about, .education, .skills, .languages, .exemple, .contacts {
     text-align: left;
 }
+
 .languages, .skills {
     margin: 0 auto;
 }
 
-h1{
+h1 {
     line-height: 0;
 }
-h2{
-color: dimgray;
+
+h2 {
+    color: dimgray;
 }
+
 h3 {
     line-height: 0;
     text-decoration: underline;
 }
-img{
+
+.photo img {
     width: 250px;
 }
-p{
+
+p {
     line-height: 1.5;
 }
-hr{
+
+hr {
     margin: 50px 0;
 }
