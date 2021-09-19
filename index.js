@@ -20,3 +20,5 @@ for (let anchor of anchors) {
         })
     })
 }
+
+hljs.initHighlightingOnLoad();
