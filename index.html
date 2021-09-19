@@ -1,21 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <title>CV Popovich Dmitry</title>
 </head>
 <body>
 <div class="wrapper">
 
     <header>
+        <div class="topnav">
+            <a href="#contacts">Contacts</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#languages">Languages</a>
+            <a href="#example">Example</a>
+            <a href="#javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
         <div class="container">
             <div class="inform">
                 <h1>Popovich Dmitry</h1>
                 <h2>JS developer</h2>
                 <hr>
-                <section class="contacts">
+                <section class="contacts" id="contacts">
                     <h3>Contacts</h3>
                     <ul>
                         <li><p><b>location:</b> Kiev, Ukraine</p></li>
@@ -27,7 +39,7 @@
 
             </div>
             <div class="photo">
-                <img src="https://i.ibb.co/41LgKXJ/camphoto-1804928587.jpg" alt="my photo">
+                <img src="https://i.ibb.co/THpNPdL/F0-A5-C25-F-44-D4-4-DCF-B382-16-EA421-F647-C-1-105-c.jpg" alt="my photo">
             </div>
 
         </div>
@@ -35,7 +47,7 @@
 
     <main>
         <hr>
-        <section class="about">
+        <section class="about" id="about">
             <h3>About me</h3>
             <p>I am 38 years old. Married. I have 2 children. I have a higher technical education. I am currently
                 working as a technician in an Italian company. In the future I see myself as a programmer. I am very
@@ -45,7 +57,7 @@
             <hr>
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
             <h3>Education</h3>
             <span><time>2004</time>-<time>2009</time> Radio communication, broadcasting and television engineer,
 <b> National Aviation University</b>, Kiev, Ukraine.
@@ -53,7 +65,7 @@
             <hr>
         </section>
         <div class="container">
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h3>Skills</h3>
                 <ul>
                     <li>HTML</li>
@@ -64,7 +76,7 @@
                 </ul>
             </section>
 
-            <section class="languages">
+            <section class="languages" id="languages">
                 <h3>Languages</h3>
                 <ul>
                     <li>Russian Native</li>
@@ -74,18 +86,18 @@
             </section>
         </div>
         <hr>
-        <section class="exemple">
-            <h3>Exemple code</h3>
-            <code>
-                &nbsp;&nbsp;const reverseString = (str) => {<Br>
-                &nbsp;&nbsp;let result = '';<Br>
-                &nbsp;&nbsp;for (let i = 0; i &lt; str.length; i += 1) {<Br>
-                &nbsp;&nbsp;&nbsp;&nbsp;result = `${str[i]}${result}`;<Br>
-                &nbsp;&nbsp;}<Br>
-                <Br>
-                &nbsp;&nbsp;return result;<Br>
-                &nbsp;&nbsp;};
-            </code>
+        <section class="example" id="example">
+            <h3>Example code</h3>
+            <pre><code class="language-js">
+                function myFunction() {
+                    let x =document.querySelector('div.topnav');
+                    if (x.className === 'topnav') {
+                        x.className += ' responsive';
+                    } else {
+                        x.className = 'topnav';
+                    }
+                }
+            </code></pre>
             <hr>
         </section>
     </main>
@@ -98,5 +110,6 @@
         </a>
     </footer>
 </div>
+<script src="/index.js"></script>
 </body>
 </html>
