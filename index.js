@@ -22,3 +22,5 @@ for (let anchor of anchors) {
 }
 
 hljs.initHighlightingOnLoad();
+
+console.log('My self-rating is 140 points')
