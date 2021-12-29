@@ -1,13 +1,33 @@
-.wrapper {
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header,
+.main,
+.footer {
+    border: 1px solid red;
+}
+
+
+/* .wrapper {
     text-align: center;
     background-color: rgba(64, 64, 64, 0.15);
     padding: 0 3em 3em;
     width: 650px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container1 {
     display: flex;
 }
 
@@ -19,11 +39,12 @@
     margin-right: auto;
 }
 
-.about, .education, .skills, .languages, .example, .contacts {
+.section {
     text-align: left;
 }
 
-.languages, .skills {
+#languages,
+#skills {
     margin: 0 auto;
 }
 
@@ -52,23 +73,19 @@ p {
 hr {
     margin: 20px 0;
 }
-section {
-    padding: 10px;
-}
 
 @media screen and (max-width: 768px) {
     .wrapper {
         width: auto;
         padding: 0 1em 1em;
     }
-    .container {
+    .container1 {
         flex-direction: column-reverse;
     }
-    .inform, 
+    .inform,
     .photo {
         margin: 0;
     }
-
     h1 {
         line-height: unset;
     }
@@ -80,12 +97,19 @@ section {
     }
 }
 
+
 /* Top navigation */
-.topnav {
+
+.nav-list {
+    display: flex;
+    /* justify-content: flex-end; */
+    list-style: none;
+    align-items: center;
     background-color: black;
     overflow: hidden;
 }
-.topnav a {
+
+.nav-list a {
     float: left;
     display: block;
     color: white;
@@ -95,32 +119,38 @@ section {
     font-size: 17px;
     transition: all 0.3s;
 }
-.topnav a:hover {
-    background-color: black;
-    color: white;
+
+.nav-list a:hover {
+    background-color: white;
+    color: black;
 }
-.topnav .icon {
+
+.nav-list .icon {
     display: none;
 }
+
 @media screen and (max-width: 600px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
+    .nav-list a {
+        display: none;
+    }
+    .nav-list a.icon {
         float: right;
         display: block;
     }
 }
+
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+    .nav-list.responsive {
+        position: relative;
+    }
+    .nav-list.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    .topnav.responsive a {
+    .nav-list.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
 }
-
-
