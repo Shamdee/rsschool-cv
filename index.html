@@ -4,10 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <title>CV Popovich Dmitry</title>
 </head>
@@ -26,7 +26,7 @@
                     <li class="nav-item"><a href="#javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
                 </ul>
             </nav>
-            <div class="container1">
+            <div class="two-column">
                 <div class="inform">
                     <h1>Popovich Dmitry</h1>
                     <h2>JS developer</h2>
@@ -35,16 +35,16 @@
                         <h3>Contacts</h3>
                         <ul>
                             <li>
-                                <p><b>location:</b> Kiev, Ukraine</p>
+                                <span><b>location:</b> Kiev, Ukraine</span>
                             </li>
                             <li>
-                                <p><b>phone:</b> +38(067)8417676</p>
+                                <span><b>phone:</b> +38(067)8417676</span>
                             </li>
                             <li>
-                                <p><b>e-mail:</b> shamdee@gmail.com</p>
+                                <span><b>e-mail:</b> shamdee@gmail.com</span>
                             </li>
                             <li>
-                                <p><b>site:</b> <a href="www.mysite.com">www.mysite.com</a></p>
+                                <span><b>site:</b> <a href="www.mysite.com">www.mysite.com</a></span>
                             </li>
                         </ul>
                     </section>
@@ -80,7 +80,8 @@
                 </p>
                 <hr>
             </section>
-            <div class="container1">
+
+            <div class="two-column">
                 <section class="section" id="skills">
                     <h3 class="section-title">Skills</h3>
                     <ul>
@@ -121,11 +122,15 @@
 
     <footer class="footer">
         <div class="container">
-            <a href="https://github.com/Shamdee">My GitHub</a>
-            <time>2021</time>
-            <a href="https://rs.school/js/">
-                <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool" width="50">
-            </a>
+            <ul class="footer-list">
+                <li class="footer-items"><a href="https://github.com/Shamdee">My GitHub</a></li>
+                <li class="footer-items"><time>2021</time></li>
+                <li class="footer-items">
+                    <a href="https://rs.school/js/">
+                        <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool" width="60">
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 

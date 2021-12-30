@@ -4,13 +4,15 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 
-.header,
+
+/* .header,
 .main,
 .footer {
     border: 1px solid red;
-}
+} */
 
 
 /* .wrapper {
@@ -24,10 +26,20 @@ html {
 
 .container {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.container1 {
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-items {
+    list-style: none;
+}
+
+.two-column {
     display: flex;
 }
 
@@ -48,15 +60,25 @@ html {
     margin: 0 auto;
 }
 
+#languages li,
+#skills li {
+    font-size: 20px;
+}
+
 h1 {
+    padding-left: 55px;
     line-height: 0;
+    font-size: 3em;
 }
 
 h2 {
+    padding-left: 55px;
     color: dimgray;
+    /* font-size: 2em; */
 }
 
 h3 {
+    padding-left: 55px;
     line-height: 0;
     text-decoration: underline;
 }
@@ -66,12 +88,22 @@ h3 {
 }
 
 p {
+    padding: 0 20px;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+span {
+    line-height: 2;
+    font-size: 20px;
 }
 
 hr {
-    margin: 20px 0;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -116,7 +148,7 @@ hr {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     transition: all 0.3s;
 }
 
