@@ -1,118 +1,140 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <title>CV Popovich Dmitry</title>
 </head>
+
 <body>
-<div class="wrapper">
-
-    <header>
-        <nav>
-        <div class="topnav">
-            <a href="#contacts">Contacts</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#languages">Languages</a>
-            <a href="#example">Example</a>
-            <a href="#javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        </div></nav>
+    <header class="header">
         <div class="container">
-            <div class="inform">
-                <h1>Popovich Dmitry</h1>
-                <h2>JS developer</h2>
-                <hr>
-                <section class="contacts" id="contacts">
-                    <h3>Contacts</h3>
-                    <ul>
-                        <li><p><b>location:</b> Kiev, Ukraine</p></li>
-                        <li><p><b>phone:</b> +38(067)8417676</p></li>
-                        <li><p><b>e-mail:</b> shamdee@gmail.com</p></li>
-                        <li><p><b>site:</b> <a href="www.mysite.com">www.mysite.com</a></p></li>
-                    </ul>
-                </section>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#education">Education</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#languages">Languages</a></li>
+                    <li class="nav-item"><a href="#example">Example</a></li>
+                    <li class="nav-item"><a href="#javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <div class="two-column">
+                <div class="inform">
+                    <h1>Popovich Dmitry</h1>
+                    <h2>JS developer</h2>
+                    <hr>
+                    <section class="contacts" id="contacts">
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li>
+                                <span><b>location:</b> Kiev, Ukraine</span>
+                            </li>
+                            <li>
+                                <span><b>phone:</b><a href="tel:+380678417676"> +38(067)8417676</a></span>
+                            </li>
+                            <li>
+                                <span><b>e-mail:</b><a href="mailto:shamdee@gmail.com"> shamdee@gmail.com</a> </span>
+                            </li>
+                            <li>
+                                <span><b>site:</b> <a href="www.mysite.com">www.mysite.com</a></span>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+                <div class="photo">
+                    <figure>
+                        <img src="https://i.ibb.co/THpNPdL/F0-A5-C25-F-44-D4-4-DCF-B382-16-EA421-F647-C-1-105-c.jpg" alt="my photo">
+                    </figure>
+                </div>
 
             </div>
-            <div class="photo"><figure>
-                <img src="https://i.ibb.co/THpNPdL/F0-A5-C25-F-44-D4-4-DCF-B382-16-EA421-F647-C-1-105-c.jpg" alt="my photo"></figure>
-            </div>
-
         </div>
     </header>
 
-    <main>
-        <hr>
-        <section class="about" id="about">
-            <h3>About me</h3>
-            <p>I am 38 years old. Married. I have 2 children. I have a higher technical education. I am currently
-                working as a technician in an Italian company. In the future I see myself as a programmer. I am very
-                motivated and responsible. </p>
-                <aside><p>Ever since childhood, I dreamed of becoming a programmer, then I did not have
-                a computer, and after school I ran to my mother to work and learned to write simple programs in
-                BASIC.</p></aside>
-            <hr>
-        </section>
-
-        <section class="education" id="education">
-            <h3>Education</h3>
-            <span><time>2004</time>-<time>2009</time> Radio communication, broadcasting and television engineer,
-<b> National Aviation University</b>, Kiev, Ukraine.
-        </span>
-            <hr>
-        </section>
+    <main class="main">
         <div class="container">
-            <section class="skills" id="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Angular</li>
-                    <li>React</li>
-                </ul>
+            <hr>
+            <section class="section" id="about">
+                <h3 class="section-title">About me</h3>
+                <p>I am 38 years old. Married. I have 2 children. I have a higher technical education. I am currently working as a technician in an Italian company. In the future I see myself as a programmer. I am very motivated and responsible. </p>
+                <aside>
+                    <p>Ever since childhood, I dreamed of becoming a programmer, then I did not have a computer, and after school I ran to my mother to work and learned to write simple programs in BASIC.
+                    </p>
+                </aside>
+                <hr>
             </section>
 
-            <section class="languages" id="languages">
-                <h3>Languages</h3>
-                <ul>
-                    <li>Russian Native</li>
-                    <li>Ukranian Native</li>
-                    <li>English A1</li>
-                </ul>
+            <section class="section" id="education">
+                <h3 class="section-title">Education</h3>
+                <p><time>2004</time>-<time>2009</time> Radio communication, broadcasting and television engineer,
+                    <b> National Aviation University</b>, Kiev, Ukraine.
+                </p>
+                <hr>
             </section>
-        </div>
-        <hr>
-        <section class="example" id="example">
-            <h3>Example code</h3>
-            <pre><code class="language-js">
+
+            <div class="two-column">
+                <section class="section" id="skills">
+                    <h3 class="section-title">Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Angular</li>
+                        <li>React</li>
+                    </ul>
+                </section>
+
+                <section class="section" id="languages">
+                    <h3 class="section-title">Languages</h3>
+                    <ul>
+                        <li>Russian Native</li>
+                        <li>Ukranian Native</li>
+                        <li>English A2</li>
+                    </ul>
+                </section>
+            </div>
+            <hr>
+            <section class="section" id="example">
+                <h3 class="section-title">Example code</h3>
+                <pre><code class="language-js">
                 function myFunction() {
-                    let x =document.querySelector('div.topnav');
-                    if (x.className === 'topnav') {
+                    let x =document.querySelector('ul.nav-list');
+                    if (x.className === 'nav-list') {
                         x.className += ' responsive';
                     } else {
-                        x.className = 'topnav';
+                        x.className = 'nav-list';
                     }
                 }
             </code></pre>
-            <hr>
-        </section>
+                <hr>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <a href="https://github.com/Shamdee">My GitHub</a>
-        <time>2021</time>
-        <a href="https://rs.school/js/">
-            <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool" width="50">
-        </a>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-list">
+                <li class="footer-items"><a href="https://github.com/Shamdee">My GitHub</a></li>
+                <li class="footer-items"><time>2021</time></li>
+                <li class="footer-items">
+                    <a href="https://rs.school/js/">
+                        <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool" width="60">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
-</div>
-<script src="index.js"></script>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
